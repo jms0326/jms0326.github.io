@@ -66,6 +66,7 @@ h3{font-size:19px;margin:0 0 6px;letter-spacing:-.01em}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
 .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.grid-2>*,.grid-3>*{min-width:0}
 .tag{display:inline-block;font-size:12.5px;padding:3px 9px;border-radius:6px;background:var(--surface-2);color:var(--muted);border:1px solid var(--line);margin:0 6px 6px 0}
 .muted{color:var(--muted)}
 .small{font-size:14px}
@@ -78,7 +79,7 @@ ul.clean li::marker{color:var(--faint)}
 .strength p{margin:0}
 
 /* 기술 스택 */
-.skills{display:grid;grid-template-columns:140px 1fr;gap:0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--surface)}
+.skills{display:grid;grid-template-columns:160px 1fr;gap:0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--surface)}
 .skills > div{padding:16px 20px;border-bottom:1px solid var(--line)}
 .skills > div:nth-last-child(-n+2){border-bottom:0}
 .skills .cat{font-weight:700;background:var(--surface-2)}

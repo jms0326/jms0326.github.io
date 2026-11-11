@@ -283,15 +283,7 @@ footer p{margin:6px 0}
           <li>금융권·공공기관·대기업 고객사 운영 이슈 대응: 로그·쿼리 분석으로 장애 원인 파악 및 패치</li>
           <li>파트 내 이슈 배분·검토, 신규 입사자와 고객사 대상 웹 리포팅 교육</li>
         </ul>
-        <div class="card" style="margin-top:14px">
-          <div class="small" style="font-weight:700;margin-bottom:6px">대표 프로젝트 · 조선호텔 사전 예약·고객 정보 시스템 <span class="muted" style="font-weight:400">(메인 담당 · Java, Oracle, WebLogic)</span></div>
-          <ul class="clean small">
-            <li>요구사항 미팅부터 시연까지 직접 진행하며 6개월간 개발, 오픈 후 유지보수 담당</li>
-            <li>스케줄러로 투숙 3일 전 안내 문자 발송, 1일 전에는 미완료 고객에게만 재발송하고 중복 발송 방지</li>
-            <li>외부망 사전 예약 데이터를 내부망 고객 정보 DB로 연계, 적용 호텔을 6곳에서 9곳으로 확대</li>
-            <li><b>성과</b>: 조선호텔 9개 지점 전체 도입. 사전 예약 고객은 현장 작성 없이 바로 입실해 프런트 업무 부담 감소</li>
-          </ul>
-        </div>
+        <p class="small" style="margin:10px 0 0">대표 프로젝트: <a href="#josun">조선호텔 사전 예약·고객 정보 시스템 (메인 담당) →</a></p>
       </div>
       <div class="tl">
         <div class="when">2025.05</div>
@@ -367,7 +359,7 @@ footer p{margin:6px 0}
     </article>
 
     <!-- 프로젝트 2 -->
-    <article class="project">
+    <article class="project" id="matcheat">
       <div class="project-head">
         <div>
           <div class="muted small">Project 2</div>
@@ -422,6 +414,65 @@ footer p{margin:6px 0}
           <div class="result">payment_id 유니크 제약으로 결제 1건당 리뷰 1개를 DB에서 보장</div>
           <div class="result">리뷰 가능 여부를 배치 확인 API(IN 쿼리 1회)로 처리해 N+1 방지</div>
           <div class="result">응답 DTO에서 계정 ID 노출 제거, 상품 소유자 검증 추가</div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 실무 프로젝트 -->
+    <article class="project" id="josun">
+      <div class="project-head">
+        <div>
+          <div class="muted small">실무 프로젝트 · 유비스톰</div>
+          <h3>조선호텔 사전 예약·고객 정보 시스템</h3>
+        </div>
+        <div class="badges"><span class="badge">메인 담당</span><span class="badge">9개 지점 전체 도입</span></div>
+      </div>
+      <div class="card">
+        <p style="margin:0 0 18px">호텔 투숙객이 방문 전에 모바일로 사전 예약 정보를 입력하고, 그 데이터를 내부 고객 정보 시스템과 연계하는 시스템입니다. 요구사항 미팅부터 오픈 후 유지보수까지 메인 담당으로 맡았습니다.</p>
+        <dl class="meta">
+          <dt>기간</dt><dd>사전 예약 시스템 개발 6개월, 오픈 이후 유지보수와 고도화</dd>
+          <dt>역할</dt><dd>메인 담당 (요구사항 협의 · 개발 · 시연 · 운영)</dd>
+          <dt>기술</dt><dd>Java, Oracle, WebLogic, Linux</dd>
+        </dl>
+
+        <div class="grid-2" style="margin-top:22px">
+          <div>
+            <h3 style="font-size:16px">예약 안내 문자 자동 발송</h3>
+            <ul class="clean small muted">
+              <li>스케줄러로 매일 오전 10시, 투숙 3일 전 고객에게 안내 문자 발송</li>
+              <li>1일 전에는 사전 예약을 마치지 않은 고객에게만 재발송</li>
+              <li>같은 고객에게 중복 발송되지 않도록 방지</li>
+            </ul>
+          </div>
+          <div>
+            <h3 style="font-size:16px">사전 예약 화면 · 저장 로직</h3>
+            <ul class="clean small muted">
+              <li>모바일 이용 비중을 고려한 반응형 화면 구현</li>
+              <li>고객이 입력한 정보를 DB에 저장하는 로직 개발</li>
+            </ul>
+          </div>
+          <div>
+            <h3 style="font-size:16px">고객 정보 시스템 연계 · 고도화</h3>
+            <ul class="clean small muted">
+              <li>스케줄러 문자 발송 시 외부망 사전 예약 데이터를 내부망 고객 정보 DB에 저장하도록 연계</li>
+              <li>적용 호텔을 6곳에서 9곳으로 확대</li>
+              <li>고객 대상 문자·메일 발송 기능 추가</li>
+            </ul>
+          </div>
+          <div>
+            <h3 style="font-size:16px">고객사 협업</h3>
+            <ul class="clean small muted">
+              <li>요구사항 미팅부터 중간 시연까지 직접 기능을 설명하며 개발</li>
+              <li>오픈 이후 유지보수를 맡아 운영 이슈 대응</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="results">
+          <div class="result">조선호텔 9개 지점 전체 도입</div>
+          <div class="result">사전 예약 고객은 현장 정보 작성 없이 바로 입실</div>
+          <div class="result">사전 예약률 상승</div>
+          <div class="result">프런트 업무 부담 감소</div>
         </div>
       </div>
     </article>
